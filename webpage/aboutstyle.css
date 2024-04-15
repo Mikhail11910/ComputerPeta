@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 0.5cm;
+    color: white;
+    text-decoration: none;
+    font-weight: 450;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+
+.navigation a:hover:after{
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.5cm;
+    color: white;
+    font-weight: 550;
+    margin-left: 40px;
+}
+
+.navigation .btnLogin-popup:hover {
+    background-color: white;
+    color: black;
+}
+
+.navigation {
+    margin-left: 1150px;
+}
+
+.btn-gui {
+    width: 200px;
+    height: 40px;
+    overflow: hidden;
+    background-color: rgb(41, 40, 40);
+}
+
+.btn-gui :hover{
+    background-color: rgb(62, 62, 62);
+    border-radius: 20px;
+    height: 40px;
+}
+
+.bordered-container {
+    border: 1px solid white; 
+    background-color: transparent; 
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    margin: 20px;
+    box-shadow: black;
+}
